@@ -1,0 +1,19 @@
+/* DEFAULT SETTINGS */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+:root {
+    /* FONT-FAMILY */ 
+    --primary-font-fam: "Maven Pro";  
+    --secondary-font-fam: "Open Sans"; 
+    --title-card-font-fam: "Lato";
+}
+
+/* PAGE CONTENT*/
+body {
+    background-color: aqua;
+}
