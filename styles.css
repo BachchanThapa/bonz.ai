@@ -150,7 +150,7 @@ p {
 
 /* .-.-.-.-.-.-.-.-.-.-.-.-.-. HOMEPAGE .-.-.-.-.-.-.-.-.-. */
 
-.frontpage-wrapper {
+.homepage-wrapper {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
