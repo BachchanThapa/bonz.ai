@@ -23,8 +23,9 @@
 :root {
     --background-color: #31405b;
     --active-color: #7bc1ea;
-    --booking-color: #3870FF;
-    --botton-color: #ba7a42;
+    --room-botton-color: #b86e1e;
+    --confirm-color: #3870FF;
+    --confirm-hover-color: #182e65;
     --grey: #e9e9e9;
     --lightgrey: #f5f5f7;
 }
@@ -44,8 +45,10 @@ body {
 
 .logo {
     display: flex;
-    width: 30%;
+    width: 40%;
     height: 30%;
+    min-width: 218px;      /*Min width ??...logo becoming very small....*/
+    min-height: 52px;
     margin: auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -54,10 +57,8 @@ body {
 h1 {
     color: #ffffff;
     display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
     margin-inline-end: 0px;
     font-weight: bold;
     text-align: center;
@@ -69,16 +70,14 @@ h1 {
 
 h2 {
     display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    font-size: 1,5rem;
+    margin-bottom: 1rem;
     font-weight: bold;
     text-align: center;
 }
 
 p {
+    padding: 0,5rem;
     color: #fff;
 }
 
@@ -167,8 +166,8 @@ p {
     flex-direction: column;
     grid-area: content__container-1;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: #f5f5f7;
     color: #1C273C;
     padding: 1rem;
@@ -176,6 +175,7 @@ p {
 }
 
 .content__container-1 p, h1 {
+    margin: 1rem, 0.5rem;
     color: #000;
 }
 
@@ -185,8 +185,8 @@ p {
     flex-direction: column;
     grid-area: content__container-2;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: #f5f5f7;
     color: #1C273C;
     padding: 1rem;
@@ -203,8 +203,8 @@ p {
     flex-direction: column;
     grid-area: content__container-3;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     background-color: #f5f5f7;
     color: #1C273C;
     padding: 1rem;
@@ -237,25 +237,28 @@ p {
 .img__scenery {
     display: flex;
     flex-direction: column;
-    height: 10.5rem;
+    height: 9rem;
+    width: 16rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.img__cosy-eve {
+.img__cosy_eve {
     display: flex;
     flex-direction: column;
-    height: 10.5rem;
+    height: 9rem;
+    width: 16rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
 
-.img__new-day {
+.img__new_day {
     display: flex;
     flex-direction: column;
-    height: 10.5rem;
+    height: 9rem;
+    width: 16rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -265,15 +268,90 @@ p {
 
 /* .-.-.-.-.-.-.-.-.-.-.-.-.-. ABOUT-US / OUR ROOMS .-.-.-.-.-.-.-.-.-. */
 
-.about-us-wrapper {
+.our-rooms-wrapper {
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
     '. content__container-1 .'
     '. content__container-2 .'
-    '. content__container-3 .';
+    '. content__container-3 .'
+    '. content__container-4 .'
+    '. content__container-5 .';
 }
+
+.content__container-5 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: content__container-5;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #f5f5f7;
+    color: #1C273C;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.content__container-5 p, h2 {
+    color: #000;
+}
+
+.img__presidential_suit {
+    display: flex;
+    flex-direction: column;
+    height: 9rem;
+    width: 16rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.img__delux_room {
+    display: flex;    
+    flex-direction: column;
+    height: 9rem;
+    width: 16rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.img__family_space {
+    display: flex;    
+    flex-direction: column;
+    height: 9rem;
+    width: 16rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
+.img__family_room {
+    display: flex;    
+    flex-direction: column;
+    height: 9rem;
+    width: 16rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+.img__standard_room {
+    display: flex;    
+    flex-direction: column;
+    height: 9rem;
+    width: 16rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+}
+
 
 /* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END ABOUT-US / OUR ROOMS .-.-.-.-.-.-.-.-.-. */
 
@@ -294,7 +372,7 @@ p {
     color: #000000;
 }
 
-.booking__container-1 {
+.booking__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,12 +390,12 @@ p {
     border-radius: 10px;
 }
 
-.booking__container__1 h1 {
+.booking__container h1 {
     color: #000;
 }
 
 .booking__button {
-    background-color: #DB9355;
+    background-color:var(--room-botton-color);
     color: #eee;
     padding: 15px 25px;
     margin-top: 1rem;
@@ -327,8 +405,18 @@ p {
 }
 
 .booking__button:hover {
-    background-color: #ba814e;
+    background-color: var(--room-botton-color);
     cursor: pointer;
+}
+
+.contat__detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: content__container-1;
+    text-align: center;
+    color: #000;
 }
 
 .checkin__label {
@@ -352,7 +440,7 @@ p {
     color: #000;
 }
 
-.guest__qty {
+.total__guest  {                   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -363,7 +451,7 @@ p {
     color: #000;
 }
 
-.room__qty {
+.total__rooms {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,7 +464,7 @@ p {
 }
 
 .primary__booking-button {
-    background-color: #3870FF;
+    background-color: var(--confirm-color);
     color: #fff;
     text-transform: uppercase;
     padding: 15px 25px;
@@ -389,7 +477,7 @@ p {
 }
 
 .primary__booking-button:hover {
-    background-color: #3f6fea;
+    background-color: var(--confirm-hover-color);
     cursor: pointer;
 }
 

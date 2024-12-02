@@ -22,28 +22,35 @@
 
 
     <section class="booking-page-wrapper">
-        <article class="booking__container-1">
-            <h1>Boka</h1>
+        <article class="booking__container">
+            <h1>Your Booking</h1>
+            <form class="contat__detail">
+                <label>E-mail:</label>
+                <input required placeholder="Provide email adress" type="text" />
+            </form>
             <form class="checkin__label">
-                <label>Incheckning</label>
+                <label>Check In</label>
                 <input required type="date">
             </form>
 
             <form class="checkout__label">
-                <label>Utcheckning</label>
+                <label>Check Out</label>
                 <input required type="date">
             </form>
 
-            <form class="guest__qty">
-                <label>Antal gäster</label>
-                <input required placeholder="Skriv antal gäster" type="number" />
+            <form class="total__guest">
+                <label>Total guests</label>
+                <input required placeholder="Number of guests" type="number" />
             </form>
 
-            <form class="room__qty" action="search-result .html">
-                <label>Antal rum</label>
-                <input required placeholder="Skriv antal rum" type="number">
-                <input class="booking__button" type="submit" value="Sök lediga rum">
+            <form class="total__rooms" action="search-result .html">
+                <label>Total rooms</label>
+                <input required placeholder="in number" type="number">
+                <input class="booking__button" type="submit" value="Sear for available room">
             </form>
+
+
+
         </article>
     </section>
 
@@ -52,7 +59,7 @@
     <footer>
         <article class="footer__content">
             <h2>Get here</h2>
-            <p>Ramdalsvägen 00, 961 78 Harads, SWEDEN</p>
+            <p>Ramdalsvägen 00, 961 78 Harads, SWEDEN <br> Contact: 012 345 67 89 &nbsp;&nbsp;E-mail: contact_us@contact.info</p>
             <img class="pic__kart" src="/bonz.ai/assets/images/kart.jpg" alt="kart">
             <img class="logo__footer" src="/bonz.ai/assets/logos/main-logo.png" alt="logo-footer">
             <p>© 2024 bonz.ai. all rights reserved.</p>
