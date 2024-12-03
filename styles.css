@@ -24,6 +24,7 @@
     --background-color: #31405b;
     --active-color: #7bc1ea;
     --room-botton-color: #b86e1e;
+    --room-botton-hover-color: #7c4204;
     --confirm-color: #3870FF;
     --confirm-hover-color: #182e65;
     --grey: #e9e9e9;
@@ -394,7 +395,7 @@ p {
     color: #000;
 }
 
-.booking__button {
+.rooms__button {
     background-color:var(--room-botton-color);
     color: #eee;
     padding: 15px 25px;
@@ -404,8 +405,8 @@ p {
     border-radius: 10px;
 }
 
-.booking__button:hover {
-    background-color: var(--room-botton-color);
+.rooms__button:hover {
+    background-color: var(--room-botton-hover-color);
     cursor: pointer;
 }
 
