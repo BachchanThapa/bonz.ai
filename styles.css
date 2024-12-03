@@ -1,29 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;700&family=Frank+Ruhl+Libre:wght@700;900&display=swap');
 
-@font-face {
-    font-family: 'NotoSans_online_security'; 
-    src: url(chrome-extension://jcpgbnbdnakoblgfkbgggankeidkfcdl/assets/fonts/noto-sans-regular.woff);
-}
+/* MAVEN PRO */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
 
-@font-face {
-    font-family: 'NotoSans_medium_online_security'; 
-    src: url(chrome-extension://jcpgbnbdnakoblgfkbgggankeidkfcdl/assets/fonts/noto-sans-medium.ttf);
-}
 
-@font-face {
-    font-family: 'NotoSans_bold_online_security'; 
-    src: url(chrome-extension://jcpgbnbdnakoblgfkbgggankeidkfcdl/assets/fonts/noto-sans-bold.woff);
-}
-
-@font-face {
-    font-family: 'NotoSans_semibold_online_security'; 
-    src: url(chrome-extension://jcpgbnbdnakoblgfkbgggankeidkfcdl/assets/fonts/noto-sans-semibold.ttf);
-}
 
 :root {
-    --background-color: #31405b;
+    --background-color: #1f8047;
     --active-color: #7bc1ea;
-    --room-botton-color: #b86e1e;
+    --room-botton-color: hsl(31, 72%, 42%);
     --room-botton-hover-color: #7c4204;
     --confirm-color: #3870FF;
     --confirm-hover-color: #182e65;
@@ -48,7 +32,7 @@ body {
     display: flex;
     width: 40%;
     height: 30%;
-    min-width: 218px;      /*Min width ??...logo becoming very small....*/
+    min-width: 218px;      /*Logo becoming very small is not clear what it stands for.*/
     min-height: 52px;
     margin: auto;
     margin-top: 1rem;
@@ -60,20 +44,13 @@ h1 {
     display: block;
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    margin-inline-end: 0px;
-    font-weight: bold;
     text-align: center;
-}
-
-.book__h1 {
-    color: #fff;
 }
 
 h2 {
     display: block;
     font-size: 1,5rem;
     margin-bottom: 1rem;
-    font-weight: bold;
     text-align: center;
 }
 
@@ -167,7 +144,7 @@ p {
     flex-direction: column;
     grid-area: content__container-1;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 1rem;
     background-color: #f5f5f7;
     color: #1C273C;
@@ -222,8 +199,8 @@ p {
     flex-direction: column;
     grid-area: content__container-4;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
     background-color: #f5f5f7;
     color: #1C273C;
     padding: 1rem;
@@ -243,6 +220,7 @@ p {
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid hsl(31, 72%, 42%); /*Put frame on this because the pic was much*/
 }
 
 .img__cosy_eve {
@@ -253,6 +231,8 @@ p {
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid hsl(31, 72%, 42%);
+
 }
 
 .img__new_day {
@@ -263,6 +243,7 @@ p {
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
+    border: 5px solid hsl(31, 72%, 42%);
 }
 
 /* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END HOMEPAGE .-.-.-.-.-.-.-.-.-. */
@@ -308,6 +289,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
+    border: 5px solid hsl(31, 72%, 42%);
 }
 
 .img__delux_room {
@@ -319,6 +301,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
+    border: 5px solid hsl(31, 72%, 42%);
 }
 
 .img__family_space {
@@ -330,6 +313,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
+    border: 5px solid hsl(31, 72%, 42%);
 }
 
 .img__family_room {
@@ -341,6 +325,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
+    border: 5px solid hsl(31, 72%, 42%);
 }
 .img__standard_room {
     display: flex;    
@@ -351,6 +336,7 @@ p {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 1rem;
+    border: 5px solid hsl(31, 72%, 42%);
 }
 
 
