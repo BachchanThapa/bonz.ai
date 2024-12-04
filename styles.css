@@ -1,28 +1,32 @@
 
-/* MAVEN PRO */
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
-
-
-
-:root {
-    --background-color: #1f8047;
-    --active-color: #7bc1ea;
-    --room-botton-color: hsl(31, 72%, 42%);
-    --room-botton-hover-color: #7c4204;
-    --confirm-color: #3870FF;
-    --confirm-hover-color: #182e65;
-    --grey: #e9e9e9;
-    --lightgrey: #f5f5f7;
-}
-
-
+/* --------------------DEFAULT SETTING------------------------ */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Fira Sans', sans-serif;
     text-decoration: none;
 }
+
+/* --------------------------------COLORS----------------------------------------------------- */
+:root {
+    --background-color: #1f8047;
+    --nav-active-color: #7bc1ea;
+    --room-botton-color: hsl(31, 72%, 42%);
+    --room-botton-hover-color: #7c4204;
+    --confirm-botton-color: #3870FF;
+    --confirm-botton-hover-color: #182e65;
+    --nav-bar-color: #fffefe;
+    --nav-bar-hover-color: #f6eaea;
+
+    /* -------------------------FONT FAMILY--------------------------------------- */
+    --primary-font-family: "Maven pro";
+    --secondary-font-family: "EB Garamond";
+}
+
+/* ----------------------Font MAVEN PRO AND EB GARAMOND--------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 
 body {
     background-color: var(--background-color);
@@ -38,99 +42,110 @@ body {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
-
+/* ------------------------------TEXT GENERAL EDITING------------------------------------------------ */
 h1 {
-    color: #ffffff;
-    display: block;
+    font: var(--primary-font-family);
     font-size: 2rem;
-    margin-bottom: 0.5rem;
-    text-align: center;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    align-self: center;
 }
 
 h2 {
-    display: block;
-    font-size: 1,5rem;
-    margin-bottom: 1rem;
-    text-align: center;
+    font: var(--primary-font-family);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+    align-self: center;
 }
 
 p {
-    padding: 0,5rem;
-    color: #fff;
+    font: var(--secondary-font-family);
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8rem;
+    color:white;
 }
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END GENERAL .-.-.-.-.-.-.-.-.-. */
+/* ---------------------------------------TEXT GENERAL EDITING ENDS HERE--------------------------------- */
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. TOP NAVIGATION-BAR .-.-.-.-.-.-.-.-.-. */
+/* -------------------TOP NAVIGATION BAR------------------------------------------------- */
 
 .topnav {
+    background-color: var(--nav-bar-color);
     overflow: hidden;
-    background-color: #e9e9e9;
 }
-  
+
 .topnav a {
-    float: left;
+    
     display: block;
-    color: black;
+    float: left;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 15px;
+    font: var(--primary-font-family);
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
     text-decoration: none;
-    font-size: 17px;
+    
 }
-  
+
 .topnav a:hover {
-    background-color: #ddd;
+    background-color:var(--nav-bar-hover-color);
     color: black;
 }
   
 .topnav a.active {
-    background-color:var(--active-color);
+    background-color:var(--nav-active-color);
     color: white;
 }
   
 .topnav input[type=text] {
+    background-color: rgb(236, 233, 233);
     float: right;
-    padding: 6px;
+    padding: 4px;
     border: none;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 17px;
+    margin-top: 0.5rem;
+    margin-right: 1rem;
+    font-size: 1rem;
 }
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END TOP NAVIGATION-BAR .-.-.-.-.-.-.-.-.-. */
+/* -------------------END OF TOP NAVIGATION BAR--------------------------------------------- */
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. BREADCRUMBS NAVIGATION .-.-.-.-.-.-.-.-.-. */
+/* BREADCRUMBS NAVIGATION --USED SPECIALLY FOR, INSIDE BOOKING OTHERS ARE CLEAR*/
 
   ul.breadcrumb {
-    padding: 10px 16px;
+    padding: 0.5rem 1rem;
     list-style: none;
   }
   
   ul.breadcrumb li {
     display: inline;
-    font-size: 15px;
-    color: #e9e9e9;
+    font: var(--primary-font-family);
+    font-size: 1rem;
+    color:var(--nav-bar-color);
   }
   
   ul.breadcrumb li+li:before {
-    padding: 8px;
-    color: #e9e9e9;
+    padding: 2px;
+    color:var(--nav-bar-color);
     content: "/\00a0";
   }
   
   ul.breadcrumb li a {
-    color: #e9e9e9;
+    color:var(--nav-bar-hover-color);
     text-decoration: none;
   }
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END BREADCRUMBS NAVIGATION .-.-.-.-.-.-.-.-.-. */
+/* BREADCRUMBS NAVIGATION */
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. HOMEPAGE .-.-.-.-.-.-.-.-.-. */
+
+/* --------------------------------------------HOME PAGE ---------------------------------- */
 
 .homepage-wrapper {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
     '. content__container-1 .'
     '. content__container-2 .'
@@ -146,15 +161,13 @@ p {
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 1rem;
-    background-color: #f5f5f7;
-    color: #1C273C;
+    background-color: var(--nav-bar-color);
     padding: 1rem;
     border-radius: 10px;
 }
 
 .content__container-1 p, h1 {
-    margin: 1rem, 0.5rem;
-    color: #000;
+    color:black;
 }
 
 .content__container-2 {
@@ -165,14 +178,13 @@ p {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: #f5f5f7;
-    color: #1C273C;
+    background-color: var(--nav-bar-color);
     padding: 1rem;
     border-radius: 10px;
 }
 
 .content__container-2 p, h2 {
-    color: #000;
+    color:black;
 }
 
 .content__container-3 {
@@ -183,14 +195,13 @@ p {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: #f5f5f7;
-    color: #1C273C;
+    background-color:var(--nav-bar-color);
     padding: 1rem;
     border-radius: 10px;
 }
 
 .content__container-3 p, h2 {
-    color: #000;
+    color:black;
 }
 
 .content__container-4 {
@@ -201,22 +212,21 @@ p {
     text-align: center;
     margin-top: 1rem;
     margin-bottom: 0rem;
-    background-color: #f5f5f7;
-    color: #1C273C;
+    background-color:var(--nav-bar-color);
     padding: 1rem;
     border-radius: 10px;
     
 }
 
 .content__container-4 p, h2 {
-    color: #000;
+    color:black;
 }
 
 .img__scenery {
     display: flex;
     flex-direction: column;
-    height: 9rem;
-    width: 16rem;
+    height: 12rem;
+    max-width: 20rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -226,8 +236,8 @@ p {
 .img__cosy_eve {
     display: flex;
     flex-direction: column;
-    height: 9rem;
-    width: 16rem;
+    height: 12rem;
+    width: 20rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -238,28 +248,29 @@ p {
 .img__new_day {
     display: flex;
     flex-direction: column;
-    height: 9rem;
-    width: 16rem;
+    height: 12rem;
+    width: 20rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
     border: 5px solid hsl(31, 72%, 42%);
 }
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END HOMEPAGE .-.-.-.-.-.-.-.-.-. */
+/* ------------------------------------------END OF HOMEPAGE------------------------------------------------ */
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. ABOUT-US / OUR ROOMS .-.-.-.-.-.-.-.-.-. */
+/* -------------------------------------OUR ROOMS PAGE--------------------------------------*/
 
 .our-rooms-wrapper {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
     '. content__container-1 .'
     '. content__container-2 .'
     '. content__container-3 .'
     '. content__container-4 .'
-    '. content__container-5 .';
+    '. content__container-5 .'
+    '. content__container-6 .';
 }
 
 .content__container-5 {
@@ -269,22 +280,38 @@ p {
     grid-area: content__container-5;
     text-align: center;
     margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     background-color: #f5f5f7;
     color: #1C273C;
     padding: 1rem;
     border-radius: 10px;
 }
-
 .content__container-5 p, h2 {
+    color: #000;
+}
+
+.content__container-6 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    grid-area: content__container-6;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    background-color: #f5f5f7;
+    color: #1C273C;
+    padding: 1rem;
+    border-radius: 10px;
+}
+.content__container-6 p, h2 {
     color: #000;
 }
 
 .img__presidential_suit {
     display: flex;
     flex-direction: column;
-    height: 9rem;
-    width: 16rem;
+    height: 12rem;
+    width: 20rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -295,8 +322,8 @@ p {
 .img__delux_room {
     display: flex;    
     flex-direction: column;
-    height: 9rem;
-    width: 16rem;
+    height: 12rem;
+    width: 20rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -307,8 +334,8 @@ p {
 .img__family_space {
     display: flex;    
     flex-direction: column;
-    height: 9rem;
-    width: 16rem;
+    height: 12rem;
+    width: 20rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -319,8 +346,8 @@ p {
 .img__family_room {
     display: flex;    
     flex-direction: column;
-    height: 9rem;
-    width: 16rem;
+    height: 12rem;
+    width: 20rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -330,8 +357,8 @@ p {
 .img__standard_room {
     display: flex;    
     flex-direction: column;
-    height: 9rem;
-    width: 16rem;
+    height: 12rem;
+    width: 20rem;
     margin-top: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -340,10 +367,9 @@ p {
 }
 
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END ABOUT-US / OUR ROOMS .-.-.-.-.-.-.-.-.-. */
+/*------------ END OF OUR ROOM PAGE-----------------------------*/
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. BOOKING .-.-.-.-.-.-.-.-.-. */
-
+/*----------------------------------BOOKING PAGE --------------------------*/
 .booking-page-wrapper {
     margin: auto;
     display: grid;
@@ -385,7 +411,7 @@ p {
     background-color:var(--room-botton-color);
     color: #eee;
     padding: 15px 25px;
-    margin-top: 1rem;
+    margin-top: 0rem;
     text-decoration: none;
     border: none;
     border-radius: 10px;
@@ -450,21 +476,21 @@ p {
     color: #000;
 }
 
-.primary__booking-button {
-    background-color: var(--confirm-color);
+.confirm__button {
+    background-color:var(--confirm-botton-color);
     color: #fff;
     text-transform: uppercase;
     padding: 15px 25px;
-    margin-top: 2rem;
+    margin-top: 0rem;
     text-decoration: none;
     border: none;
     border-radius: 10px;
     font-weight: 600;
-    cursor: pointer;
+    cursor: pointer;s
 }
 
-.primary__booking-button:hover {
-    background-color: var(--confirm-hover-color);
+.confirm__button:hover{
+    background-color:var(--confirm-botton-hover-color);
     cursor: pointer;
 }
 
@@ -513,6 +539,7 @@ label {
 
 .accept__terms {
     color: #000;
+    font-size: 1rem;
 }
 
 /* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END BOOKING .-.-.-.-.-.-.-.-.-. */
