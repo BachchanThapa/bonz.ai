@@ -67,7 +67,7 @@ p {
     color:white;
 }
 
-/* ---------------------------------------TEXT GENERAL EDITING ENDS HERE--------------------------------- */
+/* ---------------------------------------TEXT GENERAL EDITING ENDS HERE-------------------- */
 
 /* -------------------TOP NAVIGATION BAR------------------------------------------------- */
 
@@ -373,63 +373,52 @@ p {
 .booking-page-wrapper {
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-areas:
-    '. content__container-1 .'
-    '. content__container-2 .'
-    '. content__container-3 .'
-    '. content__container-4 .';
+   '. booking__container .';
 }
 
 .booking-page-wrapper p {
+    margin-top: 0rem;
+    font-family: var(--room-botton-color);
+    font-size: 1.2rem;
     color: #000000;
 }
 
 .booking__container {
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    grid-area: content__container-1;
+    grid-area: booking__container;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    background-color: #f5f5f7;
-    color: #1C273C;
+    background-color:var(--nav-bar-color);
+    color:var(--background-color);
     padding-right: 2rem;
     padding-left: 2rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     border-radius: 10px;
 }
 
 .booking__container h1 {
-    color: #000;
-}
-
-.rooms__button {
-    background-color:var(--room-botton-color);
-    color: #eee;
-    padding: 15px 25px;
-    margin-top: 0rem;
-    text-decoration: none;
-    border: none;
-    border-radius: 10px;
-}
-
-.rooms__button:hover {
-    background-color: var(--room-botton-hover-color);
-    cursor: pointer;
-}
+        font: var(--primary-font-family);
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        align-self: center;
+    }
 
 .contat__detail {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    grid-area: content__container-1;
+    font-family: var(--secondary-font-family);
+    font-weight: 500;
     text-align: center;
-    color: #000;
+    color: black;
 }
 
 .checkin__label {
@@ -437,9 +426,10 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    grid-area: content__container-1;
+    font-family: var(--secondary-font-family);
+    font-weight: 500;
     text-align: center;
-    color: #000;
+    color: black;
 }
 
 .checkout__label {
@@ -447,10 +437,10 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    grid-area: content__container-2;
+    font-family: var(--secondary-font-family);
+    font-weight: 500;
     text-align: center;
-    margin-top: 1rem;
-    color: #000;
+    color: black;
 }
 
 .total__guest  {                   
@@ -458,10 +448,10 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    grid-area: content__container-3;
+    font-family: var(--secondary-font-family);
+    font-weight: 500;
     text-align: center;
-    margin-top: 1rem;
-    color: #000;
+    color: black;
 }
 
 .total__rooms {
@@ -469,24 +459,56 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    grid-area: content__container-4;
+    font-family: var(--secondary-font-family);
+    font-weight: 500;
     text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-    color: #000;
+    color: black;
 }
 
-.confirm__button {
-    background-color:var(--confirm-botton-color);
-    color: #fff;
-    text-transform: uppercase;
+
+
+.rooms__button {
+    background-color:var(--room-botton-color);
+    color: white;
+    font-family: var(--secondary-font-family);
+    font-size: 1rem;
+    font-weight: bold;
     padding: 15px 25px;
     margin-top: 0rem;
     text-decoration: none;
     border: none;
     border-radius: 10px;
-    font-weight: 600;
-    cursor: pointer;s
+    cursor: pointer;
+}
+
+.rooms__button:hover {
+    background-color: var(--room-botton-hover-color);
+    cursor: pointer;
+}
+
+.book__h2{
+    font-family: var(--primary-font-family);
+    font-size: 1.4rem;
+    color: #7c4204;
+
+}
+
+
+.confirm__button {
+    background-color:var(--confirm-botton-color);
+    color:white;
+    font-family: var(--secondary-font-family);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 0rem;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .confirm__button:hover{
@@ -501,14 +523,18 @@ form {
 }   
 
 input {
+    background-color:var(--nav-bar-hover-color);
     margin-top: 0.5rem;
     border: none;
     text-align: center;
     outline: none;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    font-family: var(--secondary-font-family);
+    font-weight: 500;                              
+    text-align: center;
+    color: black;
 }
 
 .checkbox {
@@ -516,12 +542,12 @@ input {
         margin-right: auto;
         margin-left: auto;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0rem;
         top: 0;
         left: 0;
-        height: 25px;
-        width: 25px;
-        background-color: #e9e9e9;
+        height: 35px;
+        width: 35px;
+        
         cursor: pointer;
 }
 
@@ -533,34 +559,28 @@ label {
 }
 
 .your__booking {
-    color: #000;
+    color: black;
     margin-bottom: 1rem;
+    font-family: var(--primary-font-family);
+    font-size: 1.2rem;
 }
 
 .accept__terms {
     color: #000;
-    font-size: 1rem;
+    font-family: var(--primary-font-family);
+    font-size: 1.2rem;
 }
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END BOOKING .-.-.-.-.-.-.-.-.-. */
+/*---------------------------------END OF BOOKING PAGE-------------------------------- */
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. FOOTER .-.-.-.-.-.-.-.-.-. */
-
+/*---------------------------------FOOTER----------------------------------*/
+/*
 .footer__bonzai {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
-.logo__footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30%;
-    height: 30%;
-    margin-bottom: 2rem;
-}
-
+*/
 .footer__content {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -571,23 +591,32 @@ label {
 }
 
 .footer__content h2 {
-    color: #fff;
+    color: white;
+}
+
+.logo__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 0rem;
 }
 
 .pic__kart {
-    width: 20rem;
-    height: 6rem;
+    width: 23.5rem;
+    height: 8rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
 }
+/*---------------------------------------- END OF FOOTER PART ----------------------------------*/
 
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END FOOTER .-.-.-.-.-.-.-.-.-. */
-
-/* .-.-.-.-.-.-.-.-.-.-.-.-.-. RESPONSIVE .-.-.-.-.-.-.-.-.-. */
+/*-----------------------------RESPONSIVITY ------------------------------*/
 
 @media screen and (max-width: 600px) {
+    
     .topnav a, .topnav input[type=text] {
     float: none;
     display: block;
@@ -596,10 +625,12 @@ label {
     margin: 0;
     padding: 14px;
     }
+
+
     .topnav input[type=text] {
     display: none;
     }
 }
 
-  /* .-.-.-.-.-.-.-.-.-.-.-.-.-. //END RESPONSIVE .-.-.-.-.-.-.-.-.-. */
+/*-------------------------------------------END OF RESPONSIVITY--------------------------------------*/
 
