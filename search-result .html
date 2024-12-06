@@ -4,54 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonz-ai eco stay</title>
+    <title>Bonz-ai Eco Stay - Review Booking</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
-        <img class="logo" src="/bonz.ai/assets/logos/main-logo.png" alt="hero" />
+        <img class="logo" src="/bonz.ai/assets/logos/main-logo.png" alt="Bonz-ai Eco Stay Logo" />
         <nav class="topnav">
             <a href="index.html">Homepage</a>
             <a href="our-rooms.html">Our Rooms</a>
             <a class="active" href="booking.html">Booking</a>
-            <input type="text" placeholder="&#128270;Search at bonz.ai">
+            <input type="text" placeholder="🔍 Search at Bonz.ai" aria-label="Search at Bonz.ai">
         </nav>
+
+        <!-- Breadcrumb Navigation -->
         <ul class="breadcrumb">
-            <li><a href='/'>Homepage</a></li>
-           <li><a href='/booking.html'>Booking</a></li>
-            <li>Review booking</li>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="booking.html">Booking</a></li>
+            <li>Review Booking</li>
         </ul>
     </header>
-    <section class="booking-page-wrapper">
-        <article class="booking__container">
-            <h1>Summary</h1><br>
-            <ul class="your__booking"><strong>Date:</strong>  06. Dec. 2024 -  08. Dec. 2024</ul>
-            <ul class="your__booking"><strong>Number of guests:</strong> 2 persons</ul>
-            <ul class="your__booking"><strong>Total room:</strong> 1 </ul>
-            <ul class="your__booking"><strong>Totalt amount:</strong> 9 999 SEK </ul><br>
-            
-            <h2 class="book__h2">Good to remember</h2><br>
 
-            <ul class="your__booking"><strong>Check In:</strong> After 3:00 PM</ul>
-            <ul class="your__booking"><strong>Check Out:</strong> Before 12:00 PM</ul>
-            <form action="order-confirmation.html">
-                <label class="accept__terms">Accept terms</label>
-                <input class="checkbox" required type="checkbox">
-                <p><strong>I have read and accept the terms.</strong></p>
-                <input class="confirm__button" type="submit" value="Confirm Order">
-            </form>
-        </article>
-    </section>
+    <!-- Main Section -->
+    <main>
+        <section class="booking-page-wrapper">
 
+
+
+
+            <!--Heading ----------------------------------------------------------------------coming-->
+            <!--Heading ----------------------------------------------------------------------coming-->
+            <!--Heading ----------------------------------------------------------------------coming-->
+
+
+            <article class="booking__container">
+                <!-- Order Summary -->
+                <h2>Your Order Summary</h2>
+                <ul class="your__booking">
+                    <li><strong>Date:</strong> 06 Dec. 2024 - 08 Dec. 2024</li>
+                    <li><strong>Number of Guests:</strong> 2 persons</li>
+                    <li><strong>Total Room:</strong> 1</li>
+                    <li><strong>Total Amount:</strong> 9,999 SEK</li>
+                </ul>
+
+                <!-- Good to Remember Section -->
+                <h2 class="book__h2">Good to Remember</h2>
+                <ul class="your__booking">
+                    <li><strong>Check In:</strong> After 3:00 PM</li>
+                    <li><strong>Check Out:</strong> Before 12:00 PM</li>
+                </ul>
+
+                <!-- Confirmation Form -->
+                <form action="order-confirmation.html" method="GET">
+                    <label for="terms" class="accept__terms">
+                        <input id="terms" class="checkbox" type="checkbox" required>
+                        <strong>I have read and accept the terms.</strong>
+                    </label>
+                    <button class="confirm__button" type="submit">Confirm Order</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
     <footer>
         <article class="footer__content">
-            <h2>Get here📍</h2>
-            <p>Ramdalsvägen 00, 961 78 Harads, SWEDEN <br>&#128222; 012 345 67 89 &nbsp;&nbsp;contact_us@contact.info &#128231;</p>
-            <img class="pic__kart" src="/bonz.ai/assets/images/kart.jpg" alt="kart">
-            <img class="logo__footer" src="/bonz.ai/assets/logos/main-logo.png" alt="logo-footer">
-            <p>© 2024 bonz.ai. all rights reserved.</p>
+            <h2>Get Here 📍</h2>
+            <p>
+                Ramdalsvägen 00, 961 78 Harads, SWEDEN<br>
+                📞 Contact: 012 345 67 89 &nbsp;&nbsp; 📧 Email: contact_us@contact.info
+            </p>
+            <img class="pic__kart" src="/bonz.ai/assets/images/kart.jpg" alt="Location Map">
+            <img class="logo__footer" src="/bonz.ai/assets/logos/main-logo.png" alt="Bonz-ai Eco Stay Footer Logo">
+            <p>© 2024 Bonz.ai. All rights reserved.</p>
         </article>
     </footer>
 </body>

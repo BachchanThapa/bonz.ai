@@ -4,60 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonz-ai eco stay</title>
+    <title>Bonz-ai Eco Stay - Booking</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
+    <!-- Header -->
     <header>
-        <img class="logo" src="/bonz.ai/assets/logos/main-logo.png" alt="hero" />
+        <img class="logo" src="/bonz.ai/assets/logos/main-logo.png" alt="Bonz-ai Eco Stay Logo" />
         <nav class="topnav">
             <a href="index.html">Homepage</a>
             <a href="our-rooms.html">Our Rooms</a>
             <a class="active" href="booking.html">Booking</a>
-            <input type="text" placeholder="&#128270;Search at bonz.ai">
+            <input type="text" placeholder="🔍 Search at Bonz.ai" aria-label="Search at Bonz.ai">
         </nav>
     </header>
 
+    <!-- Main Booking Section -->
+    <main>
+        <section class="booking-page-wrapper">
+            <article class="booking__container">
+                <h1>Please Provide Your Details</h1>
+                
+                <!-- Booking Form -->
+                <form action="search-result .html" method="GET">
+                    <!-- Email -->
+                    <label for="email">E-mail:</label>
+                    <input id="email" name="email" type="email" placeholder="Provide email address" required>
+                    
+                    <!-- Check-In -->
+                    <label for="checkin">Check In:</label>
+                    <input id="checkin" name="checkin" type="date" required>
+                    
+                    <!-- Check-Out -->
+                    <label for="checkout">Check Out:</label>
+                    <input id="checkout" name="checkout" type="date" required>
+                    
+                    <!-- Total Guests -->
+                    <label for="guests">Total Guests:</label>
+                    <input id="guests" name="guests" type="number" placeholder="Number of guests" min="1" required>
+                    
+                    <!-- Total Rooms -->
+                    <label for="rooms">Total Rooms:</label>
+                    <input id="rooms" name="rooms" type="number" placeholder="Number of rooms" min="1" required>
+                    
+                    <!-- Submit -->
+                    <button class="rooms__button" type="submit">Search for Available Rooms</button>
+                </form>
+            </article>
+        </section>
+    </main>
 
-    <section class="booking-page-wrapper">
-        <article class="booking__container">
-            <h1>Your Booking</h1>
-            <form class="contat__detail">
-                <label>E-mail:</label>
-                <input required placeholder="Provide email adress" type="text" />
-            </form>
-            <form class="checkin__label">
-                <label>Check In</label>
-                <input required type="date">
-            </form>
-
-            <form class="checkout__label">
-                <label>Check Out</label>
-                <input required type="date">
-            </form>
-
-            <form class="total__guest">
-                <label>Total guests</label>
-                <input required placeholder="number of guests" type="number" min="1" />
-            </form>
-
-            <form class="total__rooms" action="search-result .html">
-                <label>Total rooms</label>
-                <input required placeholder="in number" type="number" min="1"><br>
-                <input class="rooms__button" type="submit" value="Search for available room">
-            </form>
-        </article>
-    </section>
+    <!-- Footer -->
     <footer>
         <article class="footer__content">
-            <h2>Get here📍</h2>
-            <p>Ramdalsvägen 00, 961 78 Harads, SWEDEN <br> Contact&#128222;: 012 345 67 89 &nbsp;&nbsp;E-mail:
-                contact_us@contact.info</p>
-            <img class="pic__kart" src="/bonz.ai/assets/images/kart.jpg" alt="kart">
-            <img class="logo__footer" src="/bonz.ai/assets/logos/main-logo.png" alt="logo-footer">
-            <p>© 2024 bonz.ai. all rights reserved.</p>
+            <h2>Get here 📍</h2>
+            <p>
+                Ramdalsvägen 00, 961 78 Harads, SWEDEN<br>
+                📞 Contact: 012 345 67 89 &nbsp;&nbsp; 📧 Email: contact_us@contact.info
+            </p>
+            <img class="pic__kart" src="/bonz.ai/assets/images/kart.jpg" alt="Location Map">
+            <img class="logo__footer" src="/bonz.ai/assets/logos/main-logo.png" alt="Bonz-ai Eco Stay Footer Logo">
+            <p>© 2024 Bonz.ai. All rights reserved.</p>
         </article>
     </footer>
 </body>
