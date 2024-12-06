@@ -12,7 +12,7 @@
 
     <!-- Header -->
     <header>
-        <img class="logo" src="/bonz.ai/assets/logos/main-logo.png" alt="Bonz-ai Eco Stay Logo" />
+        <img class="logo" src="/bonz.ai/assets/logos/main-logo.png" alt="Bonz-ai Eco Stay Logo">
         <nav class="topnav">
             <a href="index.html">Homepage</a>
             <a href="our-rooms.html">Our Rooms</a>
@@ -24,11 +24,16 @@
     <!-- Main Booking Section -->
     <main>
         <section class="booking-page-wrapper">
+            <!-- Heading Section -->
+            <div class="heading__booking">
+                <h1>Place the Order</h1>
+            </div>
+
             <article class="booking__container">
-                <h1>Please Provide Your Details</h1>
+                <h2>Provide Your Details</h2>
                 
                 <!-- Booking Form -->
-                <form action="search-result .html" method="GET">
+                <form action="search-result.html" method="GET">
                     <!-- Email -->
                     <label for="email">E-mail:</label>
                     <input id="email" name="email" type="email" placeholder="Provide email address" required>
@@ -47,7 +52,7 @@
                     
                     <!-- Total Rooms -->
                     <label for="rooms">Total Rooms:</label>
-                    <input id="rooms" name="rooms" type="number" placeholder="Number of rooms" min="1" required>
+                    <input id="rooms" name="rooms" type="number" placeholder="Number of rooms" min="1" required><br>
                     
                     <!-- Submit -->
                     <button class="rooms__button" type="submit">Search for Available Rooms</button>
