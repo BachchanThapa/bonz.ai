@@ -8,7 +8,7 @@
 
 /* --------------------------------COLORS----------------------------------------------------- */
 :root {
-  --background-color: #1f8047;
+  --background-color: #2a9c5b;
   --nav-active-color: #7bc1ea;
   --room-botton-color:#B86e1e;
   --room-botton-hover-color: #7c4204;
@@ -32,7 +32,7 @@ body {
   background-color: var(--background-color);
 }
 
-.logo {
+.header__logo {
   display: flex;
   width: 40%;
   height: 30%;
@@ -73,12 +73,12 @@ p {
 
 /* -------------------TOP NAVIGATION BAR------------------------------------------------- */
 
-.topnav {
+.header__nav {
   background-color: var(--basic-grey-color);
   overflow: hidden;
 }
 
-.topnav a {
+.header__nav a {
   display: block;
   float: left;
   text-align: center;
@@ -90,17 +90,17 @@ p {
   text-decoration: none;
 }
 
-.topnav a:hover {
+.header__nav a:hover {
   background-color: var(--nav-bar-hover-color);
   color: black;
 }
 
-.topnav a.active {
+.header__nav a.active {
   background-color: var(--nav-active-color);
   color: white;
 }
 
-.topnav input[type="text"] {
+.header__nav input[type="text"] {
   background-color:var(--nav-bar-hover-color);
   float: right;
   padding: 4px;
@@ -141,23 +141,23 @@ ul.breadcrumb li a {
 
 /* --------------------------------------------HOME PAGE ---------------------------------- */
 
-.homepage-wrapper {
+.homepage {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-areas:
-    ". heading ."
+    ". homepage__heading ."
     ". home__container-1 ."
     ". home__container-2 ."
     ". home__container-3 ."
     ". home__container-4 .";
 }
 
-.heading {
+.homepage__heading {
   display: flex;
   align-items: center;
   flex-direction: column;
-  grid-area: heading;
+  grid-area: homepage__heading;
   background-color: var(--background-color);
   padding: 0rem;
   text-align: center;
@@ -463,7 +463,6 @@ ul.breadcrumb li a {
 }
 
 .booking__container {
-  min-width: 375px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -497,7 +496,7 @@ form {
 
 label {
   color:black;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-top: 1rem;
 }
@@ -721,26 +720,38 @@ ul {
   text-align: center;
 }
 
-.footer__content h2 {
+.footer__title {
   color: white;
-}
-
-.logo__footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30%;
-  height: 30%;
-  margin-bottom: 0rem;
-}
-
-.pic__kart {
-  width: 23.5rem;
-  height: 8rem;
-  margin-top: 1rem;
+  font-size: 1.5rem;
   margin-bottom: 1rem;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.footer__contact {
+  font-size: 1rem;
+  color: blanchedalmond;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+
+.footer__logo {
+  display: block;
+  width: 150px; /* More appropriate fixed size for logos */
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.footer__map {
+  width: 100%; /* Adjusted for responsiveness */
+  max-width: 23.5rem;
+  height: auto;
+  margin: 1rem auto;
+}
+
+.footer__copyright {
+  font-size: 1rem;
+  color: white;
+  margin-top: 1rem;
 }
 /*---------------------------------------- END OF FOOTER PART ----------------------------------*/
 
@@ -757,7 +768,7 @@ ul {
     padding: 14px;
   }
 
-  .topnav input[type="text"] {
+  .header__nav input[type="text"] {
     display: none;
   }
 }
