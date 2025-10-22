@@ -74,6 +74,12 @@ p {
 /* -------------------TOP NAVIGATION BAR------------------------------------------------- */
 
 .header__nav {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: .5rem 1rem;
   background-color: var(--basic-grey-color);
   overflow: hidden;
 }
@@ -81,6 +87,7 @@ p {
 .header__nav a {
   display: block;
   float: left;
+  align-items: center;
   text-align: center;
   padding: 10px 15px;
   font: var(--primary-font-family);
